@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Visualization Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- TopoJSON -->
+    <script src="https://unpkg.com/topojson@3"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>COVID-19 Dashboard</h1>
+        <div class="control-buttons">
+            <button class="control-button active" data-type="total_cases">Total Cases</button>
+            <button class="control-button" data-type="total_deaths">Total Deaths</button>
+            <button class="control-button" data-type="total_recovered">Total Recovered</button>
+        </div>
+        <div class="chart-container">
+            <h2>World Map</h2>
+            <div id="worldmap"></div>
+        </div>
+        <div class="chart-container">
+            <h2>Heatmap</h2>
+            <div id="heatmap"></div>
+        </div>
+        <div class="chart-container">
+            <h2>Trends</h2>
+            <div id="linechart"></div>
+        </div>
+        <div class="chart-container">
+            <h2>Global COVID-19 Distribution</h2>
+            <div id="piechart"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
